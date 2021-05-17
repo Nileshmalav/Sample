@@ -1,0 +1,197 @@
+/* root */
+* {
+    font-family: 'Girassol', cursive;
+    --navBackgroundColour: rgb(3, 65, 3);
+    --navFontColour: white;
+
+}
+
+/* root */
+
+/* body  */
+body {
+    margin: 0px;
+}
+
+/* body  */
+
+/* header */
+/*header phone*/
+.dheader {
+    display: none;
+}
+
+/*header phone*/
+.header::before {
+    content: "";
+    background-color: var(--navBackgroundColour);
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+}
+
+.dNavVisible {
+    display: none;
+}
+
+.header {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    height: 50px;
+    color: var(--navFontColour);
+}
+
+.navmenu ul {
+    display: flex;
+    /* flex-direction:row; */
+}
+
+.navmenu ul a {
+    color: var(--navFontColour);
+    text-decoration: none;
+}
+
+.navitem {
+    list-style: none;
+    padding: 5px 20px;
+}
+
+.right button {
+    padding: 2px 20px;
+    margin: 2px 20px;
+    background-color: blue;
+    border-radius: 5px;
+    font-size: 22px;
+    margin: 5px 15px;
+}
+
+.right button:hover {
+    background-color: red;
+}
+
+.right button a {
+    color: var(--navFontColour);
+    text-decoration: none;
+
+}
+
+
+
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: var(--navFontColour);
+    padding: 5px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+#home{
+    background-color: rgb(133, 123, 34);
+}
+#home:hover{
+    background-color: red;
+    /* z-index:5; */
+}
+.navitem:hover,
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--navBackgroundColour);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: var(--navFontColour);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: blue;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.dropdown:hover .header {
+    background-color: aqua;
+
+}
+
+/* header */
+
+
+
+/* section */
+.section{
+    border:2px solid red;
+    background-color:skyblue;
+    /* height:500px; */
+    /* margin:10px; */
+}
+
+/* section */
+
+
+
+/* footer  */
+.footer{
+    bottom: 0px;
+    left: 0px;
+    background-color:blue;
+    height:100px;
+    width:100%;
+    margin:auto;
+    text-align: center;
+}
+.fdiv{
+    padding:10px;
+    font-size:25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding-bottom: 0px;
+    margin-bottom:0px;
+}
+
+
+
+/* footer  */
